@@ -1,6 +1,5 @@
-document.querySelector('form', () => {
-    const loginForm = document.querySelector('.login-form');
-    loginForm.addEventListener('submit', event => {
+const loginForm = document.querySelector('.login-form');
+loginForm.addEventListener('submit', event => {
         event.preventDefault();
         const emailInput = loginForm.elements['email'];
         const passwordInput = loginForm.elements['password'];
@@ -19,4 +18,3 @@ document.querySelector('form', () => {
             
         }
     });
-});
